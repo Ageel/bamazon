@@ -1,6 +1,7 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var Table = require('cli-table');
+// var table = require('console.table');
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -19,6 +20,23 @@ connection.connect(function(err) {
   // runSearch();
 });
 
+// Display what products are available
+connection.query('SELECT * FROM products',function(err,rows){
+  if(err) throw err;
+
+  console.log('Products Available:\n');
+  console.log(rows);
+});
+
+// connection.query('SELECT * FROM products',function(err,rows){
+//   if(err) throw err;
+
+//   console.log('Products Available:\n');
+//   console.log(rows);
+// });
+// var showTable = function(){
+//   connection.connet
+// }
 // var runSearch = function() {
 //   inquirer.prompt({
 //     name: "action",
