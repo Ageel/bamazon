@@ -1,0 +1,22 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "bamazon product app",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ageel/bamazon.git"
+  },
+  "keywords": [
+    "bamazon"
+  ],
+  "author": "ageel shatry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ageel/bamazon/issues"
+  },
+  "homepage": "https://github.com/Ageel/bamazon#readme"
+}
